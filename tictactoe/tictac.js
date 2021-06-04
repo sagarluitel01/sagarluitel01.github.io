@@ -16,15 +16,16 @@ function displayTurn(){
     }
 }
 
-function myFunction(){
-    console.log(alreadyTaken(0));
-    if(!alreadyTaken(0)){
+function myFunction(n){
+    console.log(n)
+    
+    if(!alreadyTaken(n-1)){
         if(index%2 == 0){
-            document.getElementById("one").innerHTML = "X";
-            myArray[0]= "X";
+            document.getElementById("x"+n).innerHTML = "X";
+            myArray[n-1]= "X";
         }else{
-            document.getElementById("one").innerHTML = "O";
-            myArray[0]= "O";
+            document.getElementById("x"+n).innerHTML = "O";
+            myArray[n-1]= "O";
         }
         index++;
         displayTurn();
@@ -34,146 +35,6 @@ function myFunction(){
     }
 
 }
-
-function myFunction2(){
-    if(!alreadyTaken(1)){
-        if(index%2 == 0){
-            document.getElementById("two").innerHTML = "X";
-            myArray[1]= "X";
-        }else{
-            document.getElementById("two").innerHTML = "O";
-            myArray[1]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot!")
-    }
-    
-}
-function myFunction3(){
-    if(!alreadyTaken(2)){
-        if(index%2 == 0){
-            document.getElementById("three").innerHTML = "X";
-            myArray[2]= "X";
-        }else{
-            document.getElementById("three").innerHTML = "O";
-            myArray[2]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot!")
-    }
-    
-    
-}
-function myFunction4(){
-    if(!alreadyTaken(3)){
-        if(index%2 == 0){
-            document.getElementById("four").innerHTML = "X";
-            myArray[3]= "X";
-        }else{
-            document.getElementById("four").innerHTML = "O";
-            myArray[3]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot!")
-    }
-    
-}
-function myFunction5(){
-    if(!alreadyTaken(4)){
-        if(index%2 == 0){
-            document.getElementById("five").innerHTML = "X";
-            myArray[4]= "X";
-        }else{
-            document.getElementById("five").innerHTML = "O";
-            myArray[4]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot!")
-    }
-    
-}
-function myFunction6(){
-    if(!alreadyTaken(5)){
-        if(index%2 == 0){
-            document.getElementById("six").innerHTML = "X";
-            myArray[5]= "X";
-        }else{
-            document.getElementById("six").innerHTML = "O";
-            myArray[5]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot!")
-    }
-    
-}
-function myFunction7(){
-    if(!alreadyTaken(6)){
-        if(index%2 == 0){
-            document.getElementById("seven").innerHTML = "X";
-            myArray[6]= "X";
-    
-        }else{
-            document.getElementById("seven").innerHTML = "O";
-            myArray[6]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot!")
-    }
-    
-}
-function myFunction8(){
-    if(!alreadyTaken(7)){
-        if(index%2 == 0){
-            document.getElementById("eight").innerHTML = "X";
-            myArray[7]= "X";
-        }else{
-            document.getElementById("eight").innerHTML = "O";
-            myArray[7]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot!")
-    }
-
-}
-function myFunction9(){
-    if(!alreadyTaken(8)){
-        if(index%2 == 0){
-            document.getElementById("nine").innerHTML = "X";
-            myArray[8]= "X";
-        }else{
-            document.getElementById("nine").innerHTML = "O";
-            myArray[8]= "O";
-        }
-        index++;
-        displayTurn();
-        check()
-    }else{
-       alert("Sorry this spot was already taken, Please select another spot")
-    }
-    
-}
-
 
 function check(){
 
