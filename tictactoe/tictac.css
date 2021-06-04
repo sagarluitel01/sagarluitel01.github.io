@@ -7,4 +7,15 @@ button{
 
 body{
     padding: 5%;
+    
+    text-align: center;
+    
 }
+
+.wapper{
+    border: outset;
+    border-radius: 5px;
+    height: 50%;
+    
+}
+
