@@ -1,0 +1,10 @@
+button{
+    width: 50;
+    height: 45;
+    background-color: rgb(120, 147, 221);
+    margin-top: 2px;
+}
+
+body{
+    padding: 5%;
+}
