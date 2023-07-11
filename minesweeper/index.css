@@ -1,0 +1,29 @@
+button{
+    width: 50;
+    height: 45;
+    background-color: rgb(158, 171, 207);
+    margin-top: 2px;
+}
+
+@keyframes myAnimation {
+    from {background-color: rgb(231, 23, 23);
+          left: 5;}
+    to {background-color: rgb(158, 171, 207);
+        left: 0;}
+}
+
+@keyframes divAnimation {
+    from {left: 20;
+          background-color: rgb(240, 20, 20);}
+
+    to {  left: 0;
+          background-color: none;;
+    }
+}
+
+body{
+    padding: 5%;
+    
+    text-align: center;
+    
+}
